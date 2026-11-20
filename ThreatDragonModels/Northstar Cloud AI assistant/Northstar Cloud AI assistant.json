@@ -1,0 +1,31 @@
+{
+  "version": "2.6.2",
+  "release_version": "",
+  "released_at": "",
+  "summary": {
+    "title": "Northstar Cloud AI assistant",
+    "owner": "",
+    "description": "",
+    "id": 0
+  },
+  "detail": {
+    "contributors": [
+      {
+        "name": "Minh Hoang (Ted) Le"
+      },
+      {
+        "name": "Jovian Kuntjoro"
+      },
+      {
+        "name": "Chris Leung"
+      },
+      {
+        "name": "Sihan Liu"
+      }
+    ],
+    "diagrams": [],
+    "diagramTop": 0,
+    "reviewer": "",
+    "threatTop": 0
+  }
+}

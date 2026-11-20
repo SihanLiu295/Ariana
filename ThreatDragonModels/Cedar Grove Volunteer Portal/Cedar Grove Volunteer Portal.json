@@ -53,6 +53,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -136,7 +137,6 @@
               ]
             },
             "id": "6f46c7a1-4855-4a83-9310-c14fe5c8bfb9",
-            "zIndex": 1,
             "data": {
               "type": "tm.Actor",
               "name": "Clients",
@@ -151,8 +151,8 @@
           },
           {
             "position": {
-              "x": 200,
-              "y": -410
+              "x": 210,
+              "y": -390
             },
             "size": {
               "width": 60,
@@ -170,6 +170,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 2,
             "ports": {
               "groups": {
                 "top": {
@@ -253,7 +254,6 @@
               ]
             },
             "id": "d24dbfa6-7d7a-4306-b01e-56b16aebc961",
-            "zIndex": 2,
             "data": {
               "type": "tm.Process",
               "name": "Volunteer Portal",
@@ -268,57 +268,7 @@
               "privilegeLevel": "",
               "threats": []
             },
-            "children": [
-              "2f60d38e-dab8-4d1e-bb3a-4875e44bd291"
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Data Flow",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
-            },
-            "labels": [
-              "Data Flow"
-            ],
-            "id": "2f60d38e-dab8-4d1e-bb3a-4875e44bd291",
-            "source": {
-              "cell": "d24dbfa6-7d7a-4306-b01e-56b16aebc961",
-              "port": "7c7a5077-9279-47e9-a97d-63eabe569641"
-            },
-            "target": {
-              "cell": "d24dbfa6-7d7a-4306-b01e-56b16aebc961",
-              "port": "3315dc48-7986-4ea4-87e7-a52e330ade38"
-            },
-            "vertices": [],
-            "parent": "d24dbfa6-7d7a-4306-b01e-56b16aebc961"
+            "children": []
           },
           {
             "shape": "flow",
@@ -777,6 +727,104 @@
             ]
           },
           {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Weekly delivery CSV download",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Weekly delivery CSV download"
+            ],
+            "id": "e5bef87c-6fc2-4d65-a8e5-7c0f600459ec",
+            "source": {
+              "cell": "8ef103c2-eaaf-4fa1-aa84-6f5a8c1e6fec",
+              "port": "3315dc48-7986-4ea4-87e7-a52e330ade38"
+            },
+            "target": {
+              "cell": "757e14f7-1d20-4623-805d-b199c545f50d",
+              "port": "04018c0b-66ff-45df-9610-c53be117d465"
+            },
+            "vertices": [
+              {
+                "x": 730,
+                "y": -240
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "shared dispatch login and civ download request",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "shared dispatch login and civ download request"
+            ],
+            "id": "22c656cc-2bc3-4a11-a0d5-320f87af0e07",
+            "source": {
+              "cell": "d24dbfa6-7d7a-4306-b01e-56b16aebc961",
+              "port": "a87c5d69-05c0-49d8-ac23-fd769dd3b1b5"
+            },
+            "target": {
+              "cell": "757e14f7-1d20-4623-805d-b199c545f50d",
+              "port": "4729899a-1981-48a3-a138-0443b0b0c402"
+            }
+          },
+          {
             "position": {
               "x": 410,
               "y": -80
@@ -800,6 +848,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 11,
             "ports": {
               "groups": {
                 "top": {
@@ -883,7 +932,6 @@
               ]
             },
             "id": "b827a525-a7a7-4c72-8845-057189175e62",
-            "zIndex": 11,
             "data": {
               "type": "tm.Store",
               "name": "Household Database",
@@ -921,6 +969,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 12,
             "ports": {
               "groups": {
                 "top": {
@@ -1004,7 +1053,6 @@
               ]
             },
             "id": "a7957707-84c5-404b-90cd-ef6c37017199",
-            "zIndex": 12,
             "data": {
               "type": "tm.Actor",
               "name": "Staff",
@@ -1019,8 +1067,8 @@
           },
           {
             "position": {
-              "x": 590,
-              "y": -490
+              "x": 460,
+              "y": -500
             },
             "size": {
               "width": 112.5,
@@ -1038,6 +1086,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 13,
             "ports": {
               "groups": {
                 "top": {
@@ -1121,7 +1170,6 @@
               ]
             },
             "id": "bdc26a40-0559-4ea3-abfa-09f220ee48eb",
-            "zIndex": 13,
             "data": {
               "type": "tm.Actor",
               "name": "Coordinator",
@@ -1136,8 +1184,8 @@
           },
           {
             "position": {
-              "x": 820,
-              "y": -310
+              "x": 642.5,
+              "y": -330
             },
             "size": {
               "width": 60,
@@ -1155,6 +1203,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 14,
             "ports": {
               "groups": {
                 "top": {
@@ -1238,7 +1287,6 @@
               ]
             },
             "id": "8ef103c2-eaaf-4fa1-aa84-6f5a8c1e6fec",
-            "zIndex": 14,
             "data": {
               "type": "tm.Process",
               "name": "CSV EXPORT",
@@ -1251,6 +1299,123 @@
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 750,
+              "y": -220
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Volunteers"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "ca327d3c-ce8c-48f7-8909-db513e17dea2"
+                },
+                {
+                  "group": "right",
+                  "id": "3d6ef178-1cbe-477d-95af-be6c2d90430a"
+                },
+                {
+                  "group": "bottom",
+                  "id": "4729899a-1981-48a3-a138-0443b0b0c402"
+                },
+                {
+                  "group": "left",
+                  "id": "04018c0b-66ff-45df-9610-c53be117d465"
+                }
+              ]
+            },
+            "id": "757e14f7-1d20-4623-805d-b199c545f50d",
+            "zIndex": 15,
+            "data": {
+              "type": "tm.Actor",
+              "name": "Volunteers",
+              "description": "",
+              "isTrustBoundary": false,
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": false,
               "threats": []
             }
           }

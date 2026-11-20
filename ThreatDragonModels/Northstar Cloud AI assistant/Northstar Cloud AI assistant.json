@@ -58,7 +58,6 @@
               "hasOpenThreats": false,
               "crossingFlows": [
                 "7772093b-cb4e-44ec-a461-d3a1f050e0a4",
-                "dbe57f11-f577-4bbe-86fe-476c5d139256",
                 "5bdd6da3-4113-46ec-8685-61308378b663",
                 "9168dd49-5235-4a0c-a71a-3f5e04200496",
                 "38a353d3-ed7a-497c-92f5-a1ed30e212c7",
@@ -66,7 +65,8 @@
                 "78d06084-979e-4d9f-bc2f-6de63aa7674c",
                 "96272f20-1aec-436d-aa6a-d17de28a137f",
                 "d798dbd9-138f-4d55-9d01-1d73c1ed025d",
-                "08b5fa32-c1b1-472d-8bf6-d9e2209e3d38"
+                "08b5fa32-c1b1-472d-8bf6-d9e2209e3d38",
+                "a75b3d5b-8552-4029-aa3c-576bf20b739c"
               ],
               "containedElements": [
                 "478eb912-fabc-45fc-baa2-9b658d422972",
@@ -433,8 +433,8 @@
           },
           {
             "position": {
-              "x": 910,
-              "y": 510
+              "x": 930,
+              "y": 530
             },
             "size": {
               "width": 112.5,
@@ -1007,54 +1007,6 @@
                 "y": 130
               }
             ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Indexed passages ,tenant ID,access labels",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": [
-                "5b80da2c-98f5-4e88-955a-393ca9ba3a48"
-              ]
-            },
-            "labels": [
-              "Indexed passages ,tenant ID,access labels"
-            ],
-            "id": "dbe57f11-f577-4bbe-86fe-476c5d139256",
-            "source": {
-              "x": 180,
-              "y": 280
-            },
-            "target": {
-              "cell": "6605dd3e-6976-4808-acdc-d98fa4450597",
-              "port": "71d1f141-8c99-4a6c-8264-bfd8ba620cec"
-            }
           },
           {
             "shape": "flow",
@@ -2067,9 +2019,105 @@
             ]
           },
           {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Question and selected document passage",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": [
+                "5b80da2c-98f5-4e88-955a-393ca9ba3a48"
+              ]
+            },
+            "labels": [
+              "Question and selected document passage"
+            ],
+            "id": "a75b3d5b-8552-4029-aa3c-576bf20b739c",
+            "source": {
+              "cell": "a7cbe9be-827d-437d-af1d-96e169c12bb4",
+              "port": "9517d45e-ef6a-446f-b9f0-bb58d43350d2"
+            },
+            "target": {
+              "cell": "09198262-7523-41d5-82a8-52d349dd80ec",
+              "port": "fceee1ec-92c3-4520-9352-ead839061e8c"
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Indexed passages ,tenant ID,access labels",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Indexed passages ,tenant ID,access labels"
+            ],
+            "id": "dbe57f11-f577-4bbe-86fe-476c5d139256",
+            "source": {
+              "cell": "528bf46e-1f38-4c16-bd96-fa0e79b63d3c",
+              "port": "0ebd3d79-bc67-408b-8889-980f61a9c743"
+            },
+            "target": {
+              "cell": "6605dd3e-6976-4808-acdc-d98fa4450597",
+              "port": "71d1f141-8c99-4a6c-8264-bfd8ba620cec"
+            },
+            "vertices": []
+          },
+          {
             "position": {
-              "x": 126,
-              "y": 240
+              "x": 90,
+              "y": 220
             },
             "size": {
               "width": 60,
@@ -2458,8 +2506,8 @@
           },
           {
             "position": {
-              "x": 830,
-              "y": 200
+              "x": 860,
+              "y": 180
             },
             "size": {
               "width": 60,

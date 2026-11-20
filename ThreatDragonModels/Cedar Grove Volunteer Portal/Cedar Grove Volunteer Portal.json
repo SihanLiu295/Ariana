@@ -48,8 +48,8 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "fa778ec7-e352-4a29-94e2-b2658221a712",
             "zIndex": -1,
+            "id": "fa778ec7-e352-4a29-94e2-b2658221a712",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "Hosting Provider Environment",
@@ -59,11 +59,11 @@
               "crossingFlows": [
                 "41035887-d54e-4c21-8547-f266a86a1a16",
                 "1d245450-c64a-454b-9702-c921dce9c33a",
-                "78a09c86-fb8d-47a4-bf2a-813272b1ef50",
                 "41bb99ef-0e34-42ff-a51e-f94f3d270553",
                 "2410d305-c852-4ff1-b8d5-8739546335b9",
                 "e5bef87c-6fc2-4d65-a8e5-7c0f600459ec",
-                "c12458bc-9993-477f-ac8f-068bce816d17"
+                "c12458bc-9993-477f-ac8f-068bce816d17",
+                "78a09c86-fb8d-47a4-bf2a-813272b1ef50"
               ],
               "containedElements": [
                 "d24dbfa6-7d7a-4306-b01e-56b16aebc961",
@@ -88,8 +88,8 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "33985b57-1132-43de-ac54-cf8f5716a44f",
             "zIndex": -1,
+            "id": "33985b57-1132-43de-ac54-cf8f5716a44f",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "Organizational File-sharing Environment",
@@ -388,7 +388,14 @@
                 "elevationOfPrivilege": 0
               }
             },
-            "children": []
+            "children": [],
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
+            }
           },
           {
             "shape": "flow",
@@ -443,52 +450,6 @@
                 "y": -510
               }
             ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Weekly delivery \nCSV accessed from\npersonal phones",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
-            },
-            "labels": [
-              "Weekly delivery \nCSV accessed from\npersonal phones"
-            ],
-            "id": "6c4b412f-2c7e-4ecd-a584-f7117ecb46e0",
-            "source": {
-              "x": 890,
-              "y": -310
-            },
-            "target": {
-              "cell": "757e14f7-1d20-4623-805d-b199c545f50d",
-              "port": "ca327d3c-ce8c-48f7-8909-db513e17dea2"
-            }
           },
           {
             "shape": "flow",
@@ -752,112 +713,6 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Individual login, \nhousehold updates\nand \ndelivery assignments",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": [
-                "fa778ec7-e352-4a29-94e2-b2658221a712"
-              ]
-            },
-            "labels": [
-              "Individual login, \nhousehold updates\nand \ndelivery assignments"
-            ],
-            "id": "78a09c86-fb8d-47a4-bf2a-813272b1ef50",
-            "source": {
-              "x": 110,
-              "y": 20
-            },
-            "target": {
-              "cell": "d24dbfa6-7d7a-4306-b01e-56b16aebc961",
-              "port": "3315dc48-7986-4ea4-87e7-a52e330ade38"
-            },
-            "vertices": [
-              {
-                "x": 190,
-                "y": -20
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Delivery requests\nand\nhousehold records for \nreview",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
-            },
-            "labels": [
-              "Delivery requests\nand\nhousehold records for \nreview"
-            ],
-            "id": "b6d4140b-09a3-40ce-8519-ecf12b66484f",
-            "source": {
-              "x": 220,
-              "y": -330
-            },
-            "target": {
-              "cell": "a7957707-84c5-404b-90cd-ef6c37017199",
-              "port": "2d7256e3-3cc9-4be8-84ad-490a3431ba7a"
-            },
-            "vertices": [
-              {
-                "x": 140,
-                "y": -170
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
               "name": "Admin login with MFA and CSV export request",
               "description": "",
               "outOfScope": false,
@@ -1064,53 +919,6 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
-            },
-            "labels": [
-              "Data Flow"
-            ],
-            "id": "3f8c81a1-bb52-46e8-b2c2-138475e402ea",
-            "source": {
-              "cell": "bdc26a40-0559-4ea3-abfa-09f220ee48eb",
-              "port": "b9d2e787-c77b-4716-a5a2-552b0d68d8ca"
-            },
-            "target": {
-              "x": 570,
-              "y": -500
-            },
-            "vertices": []
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
               "name": "Weekly delivery css file",
               "description": "",
               "outOfScope": false,
@@ -1256,6 +1064,170 @@
                 "y": -195
               }
             ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Individual login, \nhousehold updates\nand \ndelivery assignments",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": [
+                "fa778ec7-e352-4a29-94e2-b2658221a712"
+              ]
+            },
+            "labels": [
+              "Individual login, \nhousehold updates\nand \ndelivery assignments"
+            ],
+            "id": "78a09c86-fb8d-47a4-bf2a-813272b1ef50",
+            "source": {
+              "x": 110,
+              "y": 20
+            },
+            "target": {
+              "cell": "d24dbfa6-7d7a-4306-b01e-56b16aebc961",
+              "port": "3315dc48-7986-4ea4-87e7-a52e330ade38"
+            },
+            "vertices": [
+              {
+                "x": 190,
+                "y": -20
+              },
+              {
+                "x": 210,
+                "y": -20
+              },
+              {
+                "x": 210,
+                "y": -180
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Delivery requests\nand\nhousehold records for \nreview",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Delivery requests\nand\nhousehold records for \nreview"
+            ],
+            "id": "b6d4140b-09a3-40ce-8519-ecf12b66484f",
+            "source": {
+              "x": 220,
+              "y": -330
+            },
+            "target": {
+              "cell": "a7957707-84c5-404b-90cd-ef6c37017199",
+              "port": "2d7256e3-3cc9-4be8-84ad-490a3431ba7a"
+            },
+            "vertices": [
+              {
+                "x": 140,
+                "y": -170
+              },
+              {
+                "x": 56,
+                "y": -20
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Weekly delivery \nCSV accessed from\npersonal phones",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Weekly delivery \nCSV accessed from\npersonal phones"
+            ],
+            "id": "6c4b412f-2c7e-4ecd-a584-f7117ecb46e0",
+            "source": {
+              "x": 890,
+              "y": -310
+            },
+            "target": {
+              "cell": "757e14f7-1d20-4623-805d-b199c545f50d",
+              "port": "ca327d3c-ce8c-48f7-8909-db513e17dea2"
+            }
           },
           {
             "position": {
@@ -1500,7 +1472,7 @@
           },
           {
             "position": {
-              "x": 456.25,
+              "x": 440,
               "y": -530
             },
             "size": {
@@ -1878,6 +1850,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 16,
             "ports": {
               "groups": {
                 "top": {
@@ -1961,7 +1934,6 @@
               ]
             },
             "id": "ce0383f2-0f55-4745-a170-a6b2c9dbdee6",
-            "zIndex": 16,
             "data": {
               "type": "tm.Store",
               "name": "Organisational Shared Folder",
@@ -2009,13 +1981,6 @@
                 "informationDisclosure": 1,
                 "denialOfService": 0
               }
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
@@ -2039,6 +2004,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 17,
             "ports": {
               "groups": {
                 "top": {
@@ -2122,7 +2088,6 @@
               ]
             },
             "id": "6aa79efc-581c-4f11-acf4-c5aa59a3ff93",
-            "zIndex": 17,
             "data": {
               "type": "tm.Actor",
               "name": "External\n Email Services",

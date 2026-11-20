@@ -151,7 +151,7 @@
           },
           {
             "position": {
-              "x": 583,
+              "x": 573,
               "y": 240
             },
             "size": {
@@ -978,98 +978,6 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Validated identity token",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
-            },
-            "labels": [
-              "Validated identity token"
-            ],
-            "id": "5bdd6da3-4113-46ec-8685-61308378b663",
-            "source": {
-              "x": 369,
-              "y": 220
-            },
-            "target": {
-              "cell": "860cc37f-df5f-4cc8-8343-f380279a0645",
-              "port": "fceee1ec-92c3-4520-9352-ead839061e8c"
-            }
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Manual uploads and questions",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
-            },
-            "labels": [
-              "Manual uploads and questions"
-            ],
-            "id": "9168dd49-5235-4a0c-a71a-3f5e04200496",
-            "source": {
-              "x": 406,
-              "y": 180
-            },
-            "target": {
-              "cell": "29b0bef4-a1cf-493f-801b-d12c625abcd3",
-              "port": "fceee1ec-92c3-4520-9352-ead839061e8c"
-            }
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
               "name": "Indexed passages ,tenant ID,access labels",
               "description": "",
               "outOfScope": false,
@@ -1201,6 +1109,160 @@
               "cell": "f99c610f-09bf-48f3-ba67-52bc19a9c1c8",
               "port": "71d1f141-8c99-4a6c-8264-bfd8ba620cec"
             }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Validated identity token",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Validated identity token"
+            ],
+            "id": "5bdd6da3-4113-46ec-8685-61308378b663",
+            "source": {
+              "cell": "860cc37f-df5f-4cc8-8343-f380279a0645",
+              "port": "fceee1ec-92c3-4520-9352-ead839061e8c"
+            },
+            "target": {
+              "cell": "478eb912-fabc-45fc-baa2-9b658d422972",
+              "port": "9517d45e-ef6a-446f-b9f0-bb58d43350d2"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Manual uploads and questions",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Manual uploads and questions"
+            ],
+            "id": "9168dd49-5235-4a0c-a71a-3f5e04200496",
+            "source": {
+              "cell": "29b0bef4-a1cf-493f-801b-d12c625abcd3",
+              "port": "fceee1ec-92c3-4520-9352-ead839061e8c"
+            },
+            "target": {
+              "cell": "478eb912-fabc-45fc-baa2-9b658d422972",
+              "port": "0ebd3d79-bc67-408b-8889-980f61a9c743"
+            },
+            "vertices": [
+              {
+                "x": 610,
+                "y": 220
+              },
+              {
+                "x": 520,
+                "y": 170
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Data Flow"
+            ],
+            "id": "f1378779-f44f-419e-9cbb-d5096156b9a6",
+            "source": {
+              "cell": "478eb912-fabc-45fc-baa2-9b658d422972",
+              "port": "a05c0847-f123-4a64-84be-d450e746c4d7"
+            },
+            "target": {
+              "cell": "a7cbe9be-827d-437d-af1d-96e169c12bb4",
+              "port": "a05c0847-f123-4a64-84be-d450e746c4d7"
+            },
+            "vertices": [
+              {
+                "x": 640,
+                "y": 70
+              }
+            ]
           },
           {
             "position": {
@@ -1567,6 +1629,126 @@
               "isSigned": false,
               "storesCredentials": false,
               "storesInventory": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 842,
+              "y": 170
+            },
+            "size": {
+              "width": 60,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Assistant \nBackend"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "a05c0847-f123-4a64-84be-d450e746c4d7"
+                },
+                {
+                  "group": "right",
+                  "id": "0ebd3d79-bc67-408b-8889-980f61a9c743"
+                },
+                {
+                  "group": "bottom",
+                  "id": "9517d45e-ef6a-446f-b9f0-bb58d43350d2"
+                },
+                {
+                  "group": "left",
+                  "id": "9438e772-3fd3-4e19-99bc-3edf4529faed"
+                }
+              ]
+            },
+            "id": "a7cbe9be-827d-437d-af1d-96e169c12bb4",
+            "zIndex": 14,
+            "data": {
+              "type": "tm.Process",
+              "name": "Assistant \nBackend",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
               "threats": []
             }
           }

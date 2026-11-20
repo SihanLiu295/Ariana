@@ -341,7 +341,7 @@
               "threats": [
                 {
                   "id": "6bab5c00-83ff-440d-96b6-8fbaa5989a65",
-                  "title": "Former volunteer uses shared dispatch login",
+                  "title": "A01 Former volunteer uses shared dispatch login",
                   "status": "Open",
                   "severity": "TBD",
                   "type": "Spoofing",
@@ -354,7 +354,7 @@
                 },
                 {
                   "id": "8e39663b-73cb-49cf-ba9b-85ee1d28fd58",
-                  "title": "CSV download cannot be attributed to a person ",
+                  "title": "A02 CSV download cannot be attributed to a person ",
                   "status": "Open",
                   "severity": "TBD",
                   "type": "Repudiation",
@@ -367,7 +367,7 @@
                 },
                 {
                   "id": "b5b886de-f1c1-4073-86b3-c878c761e39a",
-                  "title": "Automated submissions",
+                  "title": "A05 Automated submissions",
                   "status": "Open",
                   "severity": "TBD",
                   "type": "Denial of service",
@@ -380,22 +380,15 @@
                 }
               ],
               "threatFrequency": {
-                "spoofing": 1,
+                "spoofing": 2,
                 "tampering": 0,
-                "repudiation": 1,
+                "repudiation": 2,
                 "informationDisclosure": 0,
-                "denialOfService": 1,
+                "denialOfService": 2,
                 "elevationOfPrivilege": 0
               }
             },
-            "children": [],
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
-            }
+            "children": []
           },
           {
             "shape": "flow",
@@ -1950,7 +1943,7 @@
               "threats": [
                 {
                   "id": "35167dea-8a4d-4dcc-a6e9-1593c7cf9bbb",
-                  "title": "Shared delivery CSV is altered",
+                  "title": "A03 Shared delivery CSV is altered",
                   "status": "Open",
                   "severity": "TBD",
                   "type": "Tampering",
@@ -1963,7 +1956,7 @@
                 },
                 {
                   "id": "249c22bc-aed0-4840-ab74-ba49eafe5593",
-                  "title": "Shared delivery CSV reaches unauthorised viewers",
+                  "title": "A04 Shared delivery CSV reaches unauthorised viewers",
                   "status": "Open",
                   "severity": "TBD",
                   "type": "Information disclosure",
@@ -1976,9 +1969,9 @@
                 }
               ],
               "threatFrequency": {
-                "tampering": 2,
+                "tampering": 3,
                 "repudiation": 0,
-                "informationDisclosure": 1,
+                "informationDisclosure": 2,
                 "denialOfService": 0
               }
             }

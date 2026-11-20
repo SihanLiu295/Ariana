@@ -34,7 +34,7 @@
         "cells": [
           {
             "position": {
-              "x": -130,
+              "x": -120,
               "y": 80
             },
             "size": {
@@ -316,8 +316,8 @@
           },
           {
             "position": {
-              "x": 390,
-              "y": 600
+              "x": 240,
+              "y": 570
             },
             "size": {
               "width": 112.5,
@@ -550,8 +550,8 @@
           },
           {
             "position": {
-              "x": 1570,
-              "y": 370
+              "x": 1327.5,
+              "y": 560
             },
             "size": {
               "width": 112.5,
@@ -667,8 +667,8 @@
           },
           {
             "position": {
-              "x": 1440,
-              "y": -40
+              "x": 1170,
+              "y": -110
             },
             "size": {
               "width": 112.5,
@@ -949,8 +949,8 @@
             },
             "vertices": [
               {
-                "x": 560,
-                "y": 330
+                "x": 510,
+                "y": 290
               }
             ]
           },
@@ -1267,12 +1267,16 @@
             },
             "vertices": [
               {
-                "x": 600,
+                "x": 530,
                 "y": 120
               },
               {
                 "x": 660,
                 "y": 120
+              },
+              {
+                "x": 780,
+                "y": 140
               }
             ]
           },
@@ -1377,6 +1381,10 @@
               {
                 "x": 670,
                 "y": 360
+              },
+              {
+                "x": 590,
+                "y": 330
               }
             ]
           },
@@ -1458,7 +1466,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Generated ticket summary or draft reply",
+              "name": "Generated\n ticket summary or draft reply",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -1472,7 +1480,7 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "Generated ticket summary or draft reply"
+              "Generated\n ticket summary or draft reply"
             ],
             "id": "6f11918f-73cd-4920-9524-8f9644e51dfe",
             "source": {
@@ -1493,8 +1501,16 @@
                 "y": 160
               },
               {
+                "x": 610,
+                "y": 130
+              },
+              {
                 "x": 580,
                 "y": 130
+              },
+              {
+                "x": 540,
+                "y": 150
               },
               {
                 "x": 490,
@@ -2013,8 +2029,8 @@
             },
             "vertices": [
               {
-                "x": 1220,
-                "y": 270
+                "x": 1240,
+                "y": 330
               }
             ]
           },
@@ -2258,8 +2274,8 @@
           },
           {
             "position": {
-              "x": 186,
-              "y": 330
+              "x": 176,
+              "y": 300
             },
             "size": {
               "width": 120,
@@ -2932,13 +2948,6 @@
                 "denialOfService": 0,
                 "elevationOfPrivilege": 2
               }
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {

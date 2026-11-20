@@ -2234,7 +2234,7 @@
               "threats": [
                 {
                   "id": "1af8ea10-7ba8-471b-a6d7-e10de8dc0611",
-                  "title": "PDF processing delays other tenants",
+                  "title": "B04 PDF processing delays other tenants",
                   "status": "Open",
                   "severity": "TBD",
                   "type": "Denial of service",
@@ -2251,7 +2251,7 @@
                 "tampering": 0,
                 "repudiation": 0,
                 "informationDisclosure": 0,
-                "denialOfService": 1,
+                "denialOfService": 2,
                 "elevationOfPrivilege": 0
               }
             }
@@ -2624,7 +2624,7 @@
               "threats": [
                 {
                   "id": "f8ebc64d-584a-479f-9dcb-6bd3d8e6c282",
-                  "title": "1-Unauthorized retrieval",
+                  "title": "B01-Unauthorized retrieval",
                   "status": "Open",
                   "severity": "TBD",
                   "type": "Information disclosure",
@@ -2637,7 +2637,7 @@
                 },
                 {
                   "id": "07cbde86-1e69-4fec-96bf-d70ba7539f60",
-                  "title": "pdf distorts draft",
+                  "title": "B02 pdf distorts draft",
                   "status": "Open",
                   "severity": "TBD",
                   "type": "Tampering",
@@ -2651,9 +2651,9 @@
               ],
               "threatFrequency": {
                 "spoofing": 0,
-                "tampering": 1,
+                "tampering": 2,
                 "repudiation": 0,
-                "informationDisclosure": 1,
+                "informationDisclosure": 2,
                 "denialOfService": 0,
                 "elevationOfPrivilege": 0
               }
@@ -2899,7 +2899,7 @@
               "threats": [
                 {
                   "id": "f1fe0e9e-97e4-4863-adda-abd2bd719f22",
-                  "title": "Unauthorised action",
+                  "title": "B03 Unauthorised action",
                   "status": "Open",
                   "severity": "TBD",
                   "type": "Elevation of privilege",
@@ -2912,7 +2912,7 @@
                 },
                 {
                   "id": "78d07b57-027e-4319-9991-394baa41388a",
-                  "title": "Acction cannot be traced to approver",
+                  "title": "B05 Acction cannot be traced to approver",
                   "status": "Open",
                   "severity": "TBD",
                   "type": "Repudiation",
@@ -2927,11 +2927,18 @@
               "threatFrequency": {
                 "spoofing": 0,
                 "tampering": 0,
-                "repudiation": 1,
+                "repudiation": 2,
                 "informationDisclosure": 0,
                 "denialOfService": 0,
-                "elevationOfPrivilege": 1
+                "elevationOfPrivilege": 2
               }
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {

@@ -34,6 +34,78 @@
         "cells": [
           {
             "position": {
+              "x": 175.99999999999812,
+              "y": -399.9999999999976
+            },
+            "size": {
+              "width": 560,
+              "height": 410
+            },
+            "attrs": {
+              "label": {
+                "text": "Hosting Provider Environment"
+              }
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "fa778ec7-e352-4a29-94e2-b2658221a712",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "Hosting Provider Environment",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [
+                "41035887-d54e-4c21-8547-f266a86a1a16",
+                "1d245450-c64a-454b-9702-c921dce9c33a",
+                "78a09c86-fb8d-47a4-bf2a-813272b1ef50",
+                "41bb99ef-0e34-42ff-a51e-f94f3d270553",
+                "2410d305-c852-4ff1-b8d5-8739546335b9",
+                "e5bef87c-6fc2-4d65-a8e5-7c0f600459ec",
+                "c12458bc-9993-477f-ac8f-068bce816d17"
+              ],
+              "containedElements": [
+                "d24dbfa6-7d7a-4306-b01e-56b16aebc961",
+                "b827a525-a7a7-4c72-8845-057189175e62",
+                "8ef103c2-eaaf-4fa1-aa84-6f5a8c1e6fec"
+              ]
+            }
+          },
+          {
+            "position": {
+              "x": 794,
+              "y": -410
+            },
+            "size": {
+              "width": 380,
+              "height": 100
+            },
+            "attrs": {
+              "label": {
+                "text": "Organizational File-sharing Environment"
+              }
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "33985b57-1132-43de-ac54-cf8f5716a44f",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "Organizational File-sharing Environment",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [
+                "d63fb266-c34f-4db4-8e92-395a05fedebf"
+              ],
+              "containedElements": [
+                "ce0383f2-0f55-4745-a170-a6b2c9dbdee6"
+              ]
+            }
+          },
+          {
+            "position": {
               "x": -20,
               "y": -400
             },
@@ -163,8 +235,8 @@
                 "text": "Volunteer Portal"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -261,78 +333,62 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "6bab5c00-83ff-440d-96b6-8fbaa5989a65",
+                  "title": "Former volunteer uses shared dispatch login",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Spoofing",
+                  "description": "if the shared dispatch credentials still valid after the volunteer leave, the volunteer could sign in as dispatch",
+                  "mitigation": "Give volunteers individual and download-only portal accounts.When the volunteer leaves, prohibit each account.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 1,
+                  "score": ""
+                },
+                {
+                  "id": "8e39663b-73cb-49cf-ba9b-85ee1d28fd58",
+                  "title": "CSV download cannot be attributed to a person ",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Repudiation",
+                  "description": "Shared accounts make it hard to identify who downloaded a css",
+                  "mitigation": "Log volunteer ID,download time, and CSV version",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 5,
+                  "score": ""
+                },
+                {
+                  "id": "b5b886de-f1c1-4073-86b3-c878c761e39a",
+                  "title": "Automated submissions",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Denial of service",
+                  "description": "Bots may overwhelm the public delivery form",
+                  "mitigation": "Apply rate limits and flag repeated submissions",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 8,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "tampering": 0,
+                "repudiation": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 1,
+                "elevationOfPrivilege": 0
+              }
             },
             "children": []
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "shared dispatch login and civ download request",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
-            },
-            "labels": [
-              "shared dispatch login and civ download request"
-            ],
-            "id": "22c656cc-2bc3-4a11-a0d5-320f87af0e07",
-            "source": {
-              "cell": "d24dbfa6-7d7a-4306-b01e-56b16aebc961",
-              "port": "a87c5d69-05c0-49d8-ac23-fd769dd3b1b5"
-            },
-            "target": {
-              "cell": "757e14f7-1d20-4623-805d-b199c545f50d",
-              "port": "04018c0b-66ff-45df-9610-c53be117d465"
-            },
-            "vertices": [
-              {
-                "x": 560,
-                "y": -120
-              },
-              {
-                "x": 610,
-                "y": -120
-              },
-              {
-                "x": 630,
-                "y": -100
-              },
-              {
-                "x": 750,
-                "y": -100
-              }
-            ]
           },
           {
             "shape": "flow",
@@ -365,7 +421,9 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": []
+              "trustBoundaryIds": [
+                "33985b57-1132-43de-ac54-cf8f5716a44f"
+              ]
             },
             "labels": [
               "Upload od weekly delivery CSV"
@@ -523,7 +581,9 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": []
+              "trustBoundaryIds": [
+                "fa778ec7-e352-4a29-94e2-b2658221a712"
+              ]
             },
             "labels": [
               "Client email address\nand delivery confirmation\ndetails"
@@ -569,7 +629,9 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": []
+              "trustBoundaryIds": [
+                "fa778ec7-e352-4a29-94e2-b2658221a712"
+              ]
             },
             "labels": [
               "Delivery request form submission"
@@ -701,7 +763,9 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": []
+              "trustBoundaryIds": [
+                "fa778ec7-e352-4a29-94e2-b2658221a712"
+              ]
             },
             "labels": [
               "Individual login, \nhousehold updates\nand \ndelivery assignments"
@@ -805,7 +869,9 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": []
+              "trustBoundaryIds": [
+                "fa778ec7-e352-4a29-94e2-b2658221a712"
+              ]
             },
             "labels": [
               "Admin login with MFA and CSV export request"
@@ -1056,7 +1122,9 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": []
+              "trustBoundaryIds": [
+                "fa778ec7-e352-4a29-94e2-b2658221a712"
+              ]
             },
             "labels": [
               "Weekly delivery css file"
@@ -1112,7 +1180,9 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": []
+              "trustBoundaryIds": [
+                "fa778ec7-e352-4a29-94e2-b2658221a712"
+              ]
             },
             "labels": [
               "Weekly delivery CSV download"
@@ -1130,6 +1200,60 @@
               {
                 "x": 720,
                 "y": -240
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Shared dispatch\n login and \nCSV download \nrequest",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": [
+                "fa778ec7-e352-4a29-94e2-b2658221a712"
+              ]
+            },
+            "labels": [
+              "Shared dispatch\n login and \nCSV download \nrequest"
+            ],
+            "id": "c12458bc-9993-477f-ac8f-068bce816d17",
+            "source": {
+              "cell": "757e14f7-1d20-4623-805d-b199c545f50d",
+              "port": "04018c0b-66ff-45df-9610-c53be117d465"
+            },
+            "target": {
+              "cell": "d24dbfa6-7d7a-4306-b01e-56b16aebc961",
+              "port": "3315dc48-7986-4ea4-87e7-a52e330ade38"
+            },
+            "vertices": [
+              {
+                "x": 570,
+                "y": -195
               }
             ]
           },
@@ -1613,8 +1737,8 @@
           },
           {
             "position": {
-              "x": 727.5,
-              "y": -230
+              "x": 787.5,
+              "y": -224.9999999999976
             },
             "size": {
               "width": 112.5,
@@ -1731,7 +1855,7 @@
           {
             "position": {
               "x": 840,
-              "y": -370
+              "y": -390
             },
             "size": {
               "width": 120,
@@ -1742,11 +1866,13 @@
                 "text": "Organisational Shared Folder"
               },
               "topLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               },
               "bottomLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -1843,13 +1969,46 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isALog": false,
               "isEncrypted": false,
               "isSigned": false,
               "storesCredentials": false,
               "storesInventory": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "35167dea-8a4d-4dcc-a6e9-1593c7cf9bbb",
+                  "title": "Shared delivery CSV is altered",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Tampering",
+                  "description": "Volunteers may change addresses in the shared CSV",
+                  "mitigation": "Use read-only access and enable version history",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 6,
+                  "score": ""
+                },
+                {
+                  "id": "249c22bc-aed0-4840-ab74-ba49eafe5593",
+                  "title": "Shared delivery CSV reaches unauthorised viewers",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Information disclosure",
+                  "description": "Unauthorised users may access household information",
+                  "mitigation": "Restrict folder access and remove former volunteers",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 7,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 2,
+                "repudiation": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 0
+              }
             }
           },
           {
@@ -1985,6 +2144,6 @@
     ],
     "diagramTop": 3,
     "reviewer": "",
-    "threatTop": 0
+    "threatTop": 8
   }
 }

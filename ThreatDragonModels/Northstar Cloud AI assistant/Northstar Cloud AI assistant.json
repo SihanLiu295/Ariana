@@ -5,7 +5,7 @@
   "summary": {
     "title": "Northstar Cloud AI assistant",
     "owner": "",
-    "description": "Northstar uses a shared vector index for its cloud-based support assistant. Employees upload customer PDF files through the portal. These PDF files are treated as untrusted. An external large language model (LLM) receives questions and selected passages. Tool credentials are stored within the gateway. Employee approval is required before sending emails or creating support tickets. The support ticket and email services are located outside the application boundary. Specific access controls, approval checks, and audit settings are not specified.",
+    "description": "Northstar uses a shared vector index for its cloud-based support assistant. Customers submit support tickets and untrusted PDF attachments through the portal.Staff upload internal manuals.We assume the portal associates uploads and assistant requests with the appropriate tenant. These PDF files are treated as untrusted. An external large language model (LLM) receives questions and selected passages. Tool credentials are stored within the gateway. Employee approval is required before sending emails or creating support tickets. The support ticket and email services are located outside the application boundary. Specific access controls, approval checks, and audit settings are not specified.",
     "id": 0
   },
   "detail": {

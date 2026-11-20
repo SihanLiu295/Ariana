@@ -669,6 +669,10 @@
                 "y": -270
               },
               {
+                "x": 380,
+                "y": -270
+              },
+              {
                 "x": 510,
                 "y": -310
               }
@@ -821,7 +825,225 @@
             },
             "target": {
               "cell": "757e14f7-1d20-4623-805d-b199c545f50d",
-              "port": "4729899a-1981-48a3-a138-0443b0b0c402"
+              "port": "04018c0b-66ff-45df-9610-c53be117d465"
+            },
+            "vertices": [
+              {
+                "x": 570,
+                "y": -120
+              },
+              {
+                "x": 640,
+                "y": -100
+              },
+              {
+                "x": 760,
+                "y": -100
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Upload od weekly delivery CSV",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Upload od weekly delivery CSV"
+            ],
+            "id": "d63fb266-c34f-4db4-8e92-395a05fedebf",
+            "source": {
+              "cell": "bdc26a40-0559-4ea3-abfa-09f220ee48eb",
+              "port": "2d7256e3-3cc9-4be8-84ad-490a3431ba7a"
+            },
+            "target": {
+              "cell": "ce0383f2-0f55-4745-a170-a6b2c9dbdee6",
+              "port": "79f8d58d-7504-4911-ab04-b257d7393146"
+            },
+            "vertices": [
+              {
+                "x": 730,
+                "y": -510
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Weekly delivery \nCSV accessed from\npersonal phones",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Weekly delivery \nCSV accessed from\npersonal phones"
+            ],
+            "id": "6c4b412f-2c7e-4ecd-a584-f7117ecb46e0",
+            "source": {
+              "x": 900,
+              "y": -310
+            },
+            "target": {
+              "cell": "757e14f7-1d20-4623-805d-b199c545f50d",
+              "port": "ca327d3c-ce8c-48f7-8909-db513e17dea2"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Delivery confirmation email",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Delivery confirmation email"
+            ],
+            "id": "0eadae69-67cc-4f76-bfc8-c7a7fe21d0b0",
+            "source": {
+              "cell": "6aa79efc-581c-4f11-acf4-c5aa59a3ff93",
+              "port": "5f57c5f2-0c32-42c1-969d-562489bcf53c"
+            },
+            "target": {
+              "cell": "6f46c7a1-4855-4a83-9310-c14fe5c8bfb9",
+              "port": "2d7256e3-3cc9-4be8-84ad-490a3431ba7a"
+            },
+            "vertices": [
+              {
+                "x": 30,
+                "y": -500
+              },
+              {
+                "x": 30,
+                "y": -490
+              },
+              {
+                "x": 50,
+                "y": -438
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Client email address\nand delivery confirmation\ndetails",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Client email address\nand delivery confirmation\ndetails"
+            ],
+            "id": "41035887-d54e-4c21-8547-f266a86a1a16",
+            "source": {
+              "cell": "d24dbfa6-7d7a-4306-b01e-56b16aebc961",
+              "port": "31e1b7ac-432d-4d3a-b194-1122ff7dd9ed"
+            },
+            "target": {
+              "cell": "6aa79efc-581c-4f11-acf4-c5aa59a3ff93",
+              "port": "2467e8d1-5f6d-4e23-a410-8f0c51896215"
             }
           },
           {
@@ -1323,6 +1545,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 15,
             "ports": {
               "groups": {
                 "top": {
@@ -1406,10 +1629,250 @@
               ]
             },
             "id": "757e14f7-1d20-4623-805d-b199c545f50d",
-            "zIndex": 15,
             "data": {
               "type": "tm.Actor",
               "name": "Volunteers",
+              "description": "",
+              "isTrustBoundary": false,
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 840,
+              "y": -370
+            },
+            "size": {
+              "width": 120,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Organisational Shared Folder"
+              },
+              "topLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "79f8d58d-7504-4911-ab04-b257d7393146"
+                },
+                {
+                  "group": "right",
+                  "id": "7d9d5330-ae1d-4775-8984-ca26db013c12"
+                },
+                {
+                  "group": "bottom",
+                  "id": "8424c91c-c648-4343-b0df-4ec1f4b4776f"
+                },
+                {
+                  "group": "left",
+                  "id": "989df414-e7bc-4127-a0e9-7ded0489cc1d"
+                }
+              ]
+            },
+            "id": "ce0383f2-0f55-4745-a170-a6b2c9dbdee6",
+            "zIndex": 16,
+            "data": {
+              "type": "tm.Store",
+              "name": "Organisational Shared Folder",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isALog": false,
+              "isEncrypted": false,
+              "isSigned": false,
+              "storesCredentials": false,
+              "storesInventory": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 93,
+              "y": -631
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "External\n Email Services"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "1844da08-65f4-4b32-b47e-543e68ccddd4"
+                },
+                {
+                  "group": "right",
+                  "id": "b58ec5e6-3c9a-4c01-aca9-83edce9e1c7e"
+                },
+                {
+                  "group": "bottom",
+                  "id": "2467e8d1-5f6d-4e23-a410-8f0c51896215"
+                },
+                {
+                  "group": "left",
+                  "id": "5f57c5f2-0c32-42c1-969d-562489bcf53c"
+                }
+              ]
+            },
+            "id": "6aa79efc-581c-4f11-acf4-c5aa59a3ff93",
+            "zIndex": 17,
+            "data": {
+              "type": "tm.Actor",
+              "name": "External\n Email Services",
               "description": "",
               "isTrustBoundary": false,
               "outOfScope": false,

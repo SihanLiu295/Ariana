@@ -48,8 +48,8 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "5b80da2c-98f5-4e88-955a-393ca9ba3a48",
             "zIndex": -1,
+            "id": "5b80da2c-98f5-4e88-955a-393ca9ba3a48",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "Northstar cloud Environment",
@@ -101,6 +101,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -184,7 +185,6 @@
               ]
             },
             "id": "6a776834-ba27-456f-a34d-7b964b75aec7",
-            "zIndex": 1,
             "data": {
               "type": "tm.Actor",
               "name": "Customers",
@@ -218,6 +218,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 2,
             "ports": {
               "groups": {
                 "top": {
@@ -301,7 +302,6 @@
               ]
             },
             "id": "29b0bef4-a1cf-493f-801b-d12c625abcd3",
-            "zIndex": 2,
             "data": {
               "type": "tm.Actor",
               "name": "Staff",
@@ -335,6 +335,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 3,
             "ports": {
               "groups": {
                 "top": {
@@ -418,7 +419,6 @@
               ]
             },
             "id": "860cc37f-df5f-4cc8-8343-f380279a0645",
-            "zIndex": 3,
             "data": {
               "type": "tm.Actor",
               "name": "Identity Provider",
@@ -452,6 +452,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 4,
             "ports": {
               "groups": {
                 "top": {
@@ -535,7 +536,6 @@
               ]
             },
             "id": "09198262-7523-41d5-82a8-52d349dd80ec",
-            "zIndex": 4,
             "data": {
               "type": "tm.Actor",
               "name": "External LLM Provider",
@@ -569,6 +569,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 5,
             "ports": {
               "groups": {
                 "top": {
@@ -652,7 +653,6 @@
               ]
             },
             "id": "ece76d3c-81fc-4f9d-b189-be615c36ae27",
-            "zIndex": 5,
             "data": {
               "type": "tm.Actor",
               "name": "Ticket Service",
@@ -686,6 +686,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 6,
             "ports": {
               "groups": {
                 "top": {
@@ -769,7 +770,6 @@
               ]
             },
             "id": "149bf86e-810e-43fb-886b-ced124fb5fc7",
-            "zIndex": 6,
             "data": {
               "type": "tm.Actor",
               "name": "Email service",
@@ -803,6 +803,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 7,
             "ports": {
               "groups": {
                 "top": {
@@ -886,7 +887,6 @@
               ]
             },
             "id": "478eb912-fabc-45fc-baa2-9b658d422972",
-            "zIndex": 7,
             "data": {
               "type": "tm.Process",
               "name": "Support Portal",
@@ -2087,6 +2087,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 11,
             "ports": {
               "groups": {
                 "top": {
@@ -2170,7 +2171,6 @@
               ]
             },
             "id": "528bf46e-1f38-4c16-bd96-fa0e79b63d3c",
-            "zIndex": 11,
             "data": {
               "type": "tm.Process",
               "name": "Ingestion Worker",
@@ -2232,6 +2232,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 12,
             "ports": {
               "groups": {
                 "top": {
@@ -2315,7 +2316,6 @@
               ]
             },
             "id": "6605dd3e-6976-4808-acdc-d98fa4450597",
-            "zIndex": 12,
             "data": {
               "type": "tm.Store",
               "name": "Shared Vector Index",
@@ -2356,6 +2356,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 13,
             "ports": {
               "groups": {
                 "top": {
@@ -2439,7 +2440,6 @@
               ]
             },
             "id": "f99c610f-09bf-48f3-ba67-52bc19a9c1c8",
-            "zIndex": 13,
             "data": {
               "type": "tm.Store",
               "name": "Cloud Object Storage",
@@ -2477,6 +2477,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 14,
             "ports": {
               "groups": {
                 "top": {
@@ -2560,7 +2561,6 @@
               ]
             },
             "id": "a7cbe9be-827d-437d-af1d-96e169c12bb4",
-            "zIndex": 14,
             "data": {
               "type": "tm.Process",
               "name": "Assistant \nBackend",
@@ -2632,6 +2632,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 15,
             "ports": {
               "groups": {
                 "top": {
@@ -2715,7 +2716,6 @@
               ]
             },
             "id": "f1635b5d-2dcb-4004-9c91-433fe0f33b6a",
-            "zIndex": 15,
             "data": {
               "type": "tm.Process",
               "name": "Staff Approval",
@@ -2752,6 +2752,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 16,
             "ports": {
               "groups": {
                 "top": {
@@ -2835,7 +2836,6 @@
               ]
             },
             "id": "bc622c07-e4cf-4768-8b4f-eca6b2f75b04",
-            "zIndex": 16,
             "data": {
               "type": "tm.Process",
               "name": "Tool Gateway",
@@ -2910,6 +2910,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 17,
             "ports": {
               "groups": {
                 "top": {
@@ -2993,7 +2994,6 @@
               ]
             },
             "id": "c80c75ce-ff1e-4851-988b-3032f6688998",
-            "zIndex": 17,
             "data": {
               "type": "tm.Store",
               "name": "Audit store",
